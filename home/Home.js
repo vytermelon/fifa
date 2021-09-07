@@ -44,16 +44,16 @@ function update_results(Score1, Score2){
 		if(Score1[i].value &&  Score2[i].value){
 		if(Score1[i].value > Score2[i].value){
 			Result1 += 3;
-			gd1 += Score1[i].value;
 		}
 		else if (Score1[i].value < Score2[i].value){
 			Result2 +=3;
-			gd2 += Score2[i].value;
 		}
 		else{
 			Result2 += 1;
 			Result1 += 1;
 		}
+		gd1 += parseInt(Score1[i].value);
+		gd2 += parseInt(Score2[i].value);	
 	}
 
 	}
